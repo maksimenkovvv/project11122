@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/new.css">
+    <script src="https://kit.fontawesome.com/9cf962fa5a.js" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="./script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Montserrat:wght@100;300&family=Open+Sans:wght@400;700&family=Poiret+One&family=Quicksand:wght@300&family=Rajdhani:wght@300&family=Raleway+Dots&family=Raleway:wght@600&family=Tinos:wght@400;700&family=Unica+One&display=swap" rel="stylesheet">
+    <title>Основы HTML&CSS</title>
+</head>
+<body>
+    <header>
+		
+        <a class="logo" href="index.html"><img class="logo" src="imges/logo1.png" alt=""></a>
+        <nav>
+            <ul class="nav__links">
+                <li><a href="user.html"> РЕГИСТРАЦИЯ</a></li>
+                <li><a href="login.html"> ВОЙТИ</a></li>
+            </ul>
+        </nav>
+        <a class="cta" href="#"><button>Оформить подписку</button></a>
+    </header>
+<section>
+	<section class="task-wrapper">
+
+		<section class="task-theory" id="task1" rel="theory">
+			<h1>Что такое HTML</h1>
+			<div class="course-theory__content-text">
+				<p>Привет! Здорово, что вы&nbsp;хотите познакомиться с&nbsp;вёрсткой сайтов! Эта часть как раз посвящена созданию веб-страниц.</p>
+				<p>Самый лучший способ начать что-то изучать&nbsp;— это поменять код и&nbsp;посмотреть, что получится! Вам повезло, ведь как раз сейчас у&nbsp;нас под рукой оказался работающий сайт, с&nbsp;которым можно поэкспериментировать.</p>
+				<p>Если уж&nbsp;что-то менять, то&nbsp;менять по-крупному, чтобы <del>нанесённый урон</del> изменения были максимальными. Так что для начала удалите эту строку, а&nbsp;потом разберёмся, что это было:</p>
+				<pre><code>&lt;link rel="stylesheet" href="style.css"&gt;</code></pre>
+				<p>Ну, поехали! Удалите кусок кода в&nbsp;редакторе слева и&nbsp;посмотрите, что изменится в&nbsp;мини-браузере справа.</p>
+			</div>
+			<div><button onclick="startPractice(1)" type="button">Перейти к выполнению задания</button></div>
+		</section>
+
+		
+	</section>
+	
+	<section class="task-wrapper hidden" id="practice">
+		<h1>Задание №<span id="taskNumber"><span></h1>
+		<section class="task-wrapper">
+			<section class="task-practice" >
+				<section class="editor">
+					<textarea rows="45" id="editor"></textarea>
+					<div id="checkPracticeButton"><button onclick="checkPractice()" type="button">Проверить</button></div>
+					<div id="nextPracticeButton" class="hidden"><button onclick="nextPractice()" type="button">Перейти к следующему заданию</button></div>
+				</section>
+				<section class="editor" id="example"></section>
+			</section>
+		</section>
+	</section>
+</section>
+
+    <footer>
+        <div class="wrapper">
+            <div class="footer-block">
+                <img src="imges/logo1.png" alt="">
+                <h1>HTML&CSS</h1>
+                <p>ИНТЕРАКТИВНЫЕ ОНЛАЙН-КУРСЫ</p>
+                
+            </div>
+            <ul class="social">
+                <li><a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://ru-ru.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="https://web.telegram.org/z/" target="_blank"><i class="fab fa-telegram"></i></a></li>
+                <li><a href="https://vk.com/" target="_blank"><i class="fab fa-brands fa-vk"></i></a></li>
+            </ul>
+
+            
+            <p class="text-info" role="contentinfo">
+                <span>
+                    <a href="#">Соглашение &nbsp;&nbsp;&nbsp;</a>
+                    <a href="#">Конфиденциальность&nbsp;&nbsp;&nbsp;</a>
+                    <a href="#">Сведения об образовательной организации&nbsp;&nbsp;&nbsp;</a>
+                    <a href="#">Лицензия №4696&nbsp;&nbsp;&nbsp;</a>
+                </span>
+            </p>
+        </div>
+        
+    </footer>
+		
+</body>
+</html>
