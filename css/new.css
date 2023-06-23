@@ -214,3 +214,17 @@ textarea {
     height: 146px;
   }
 }
+
+@media (max-width: 465px) {
+  .nav__links li {
+    padding: 0px 0px 0px 20px;
+  }
+
+  .cta button {
+    margin-left: 0;
+  }
+
+  .task-theory {
+    width: 99%;
+  }
+}
